@@ -60,7 +60,7 @@
 <div class="container py-5">
     
     <div class="page-content">
-        <h2>ARTICLE</h2>
+        <h2><?php echo get_post_type_object('topics')->label ?></h2>
         <?php include('include-posts.php') ?>
     </div>
     <div class="page-content">

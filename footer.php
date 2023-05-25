@@ -1,3 +1,28 @@
+
+<footer class="bg-dark pb-3">
+<div class="container text-light py-md-5 py-4 px-3">
+    <div class="row">
+        <div class="col-md-4 mx-auto pb-3">
+            <ul class="list-group list-group-flush">
+                <?php 
+                    $nav_menus = get_custom_menu('Menu 1');
+                    foreach($nav_menus as $nav_menu):
+                ?>
+					<li class="list-group-item bg-transparent text-center border-0">
+						<a href="<?php echo $nav_menu->url ?>" class="text-decoration-none text-light"><?php echo $nav_menu->title ?></a>
+					</li>
+                <?php endforeach; ?>
+            </ul>
+
+        </div>
+        <div class="col-12 text-center">
+            <?php echo get_custom_content('Footer') ?>
+            <p>Copyright <?php echo date('Y') ?> <?php echo bloginfo('sitename') ?></p>
+        </div>
+    </div>
+</div>
+</footer>
+
 <button id="hamburger" class="hamburger hamburger--criss-cross position-fixed top-0 end-0" style="z-index: 1100;" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
     <div class="inner">
         <span class="bar"></span>
@@ -14,7 +39,7 @@
 	        </div>
             <ul class="list-group list-group-flush">
                 <?php 
-                    $nav_menus = get_custom_menu('Footer');
+                    $nav_menus = get_custom_menu('Menu 1');
                     foreach($nav_menus as $nav_menu):
                 ?>
                     <li class="list-group-item bg-transparent text-center small">

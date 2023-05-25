@@ -10,19 +10,15 @@
 	    </div>
 	</div>
 </div>
-	
-<div class="container py-5">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="page-content" role="main">
-	            <?php echo get_the_content() ?>
-            </div>
-        </div>
-        <div class="col-sm-4" role="sidebar">
-	        <?php include('include-posts-sidebar.php') ?>
-        </div>
+
+<div class="bg-light text-dark">
+<div class="container mw-lg py-5">
+    <div class="page-content pb-4" role="main">
+        <?php echo get_the_content() ?>
     </div>
 </div>
+</div>
+
 
 <?php endwhile; endif; ?>
 <?php get_footer() ?>
