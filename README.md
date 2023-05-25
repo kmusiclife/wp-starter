@@ -15,15 +15,22 @@ wp-starter is a WordPress theme that encompasses the essential basic features re
 
 To get started with wp-starter, follow these steps:
 
-1. Clone the repository:
+1. Download and Install WordPress
+```
+wp core download --locale=en
+wp config create --dbhost=HOST --dbuser=USER --dbpass=PASS --dbname=DBNAME
+cd wp-content/themes
+```
 
-   ```bash
-   git clone https://github.com/kmusiclife/wp-starter.git
-   ```
+2. Clone the repository on theme directory:
 
-2. Activate the wp-starter theme in your WordPress installation.
+```bash
+git clone https://github.com/kmusiclife/wp-starter.git
+```
 
-3. Customize the theme according to your project requirements by editing the relevant files, such as `style.css`, `functions.php`, and the template files in the `templates` directory.
+3. Activate wp-starter theme in your WordPress Management page.
+
+4. Customize the theme according to your project requirements by editing the relevant files, such as `style.css`, `functions.php`, and the template files in the `templates` directory.
 
 
 ## Contributing
