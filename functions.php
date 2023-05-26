@@ -1,5 +1,9 @@
 <?php
 
+if( file_exists(__DIR__.'/config.php') ){
+	include(__DIR__.'/config.php');
+}
+
 set_post_thumbnail_size(1280, 720, true); // youtube=1280×720, facebook=1200×630
 add_theme_support('post-thumbnails'); // enable eye-catch
 add_image_size( 'square', 500, 500, true); // square
