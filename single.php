@@ -14,7 +14,7 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-sm-8">
-            <div class="page-content" role="main">
+            <div class="bs5-content" role="main">
 	            <?php echo get_the_content() ?>
             </div>
         </div>

@@ -13,7 +13,7 @@
 
 <div class="bg-light text-dark">
 <div class="container mw-lg py-5">
-    <div class="page-content pb-4" role="main">
+    <div class="bs5-content pb-4" role="main">
         <?php echo get_the_content() ?>
     </div>
 </div>
