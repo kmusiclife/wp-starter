@@ -46,7 +46,7 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-sm-8">
-            <div class="bs5-content" role="main">
+            <div class="page-content" role="main">
 	            <?php echo get_custom_content('Main Content 1') ?>
             </div>
         </div>
@@ -59,11 +59,11 @@
 <div class="bg-light text-dark">
 <div class="container py-5">
     
-    <div class="bs5-content">
+    <div class="page-content">
         <h2 class="text-uppercase"><?php echo get_post_type_object('topics')->label ?></h2>
         <?php include('include-posts.php') ?>
     </div>
-    <div class="bs5-content">
+    <div class="page-content">
         <?php echo get_custom_content('Main Content 2') ?>
     </div>
 
